@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ridskola webbsida">
+    <meta name="keywords" content="Ridskola, Häst">
+    <meta name="author" content="Ramy Haj Mousa">
+    <link rel="stylesheet" href="/stylesheet.css">
+    <link rel="stylesheet" href="/pages/pages-stylesheet.css">
+    <title>Fryele Stallklubb</title>
+</head>
+
+<body>
+    <header>
+        <h1>Fryele Stallklubb</h1>
+    </header>
+    <div class="main">
+        <div class="navbar">
+            <div><a href="/index.html">Hem</a></div>
+            <div class="dropdown">
+                <button class="dropbtn">Föreningen</button>
+                <div class="dropdown-content">
+                    <a href="/pages/styrelsen.html">Styrelsen</a>
+                    <a href="/pages/bli-medlem.html">Bli medlem</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Ridskola</button>
+                <div class="dropdown-content">
+                    <a href="/pages/hästar.html">Hästar</a>
+                    <a href="/pages/personal.html">Personal</a>
+                    <a href="/pages/börja-rida.html">Börja Rida</a>
+                </div>
+            </div>
+            <div><a href="/pages/anläggning.html">Anläggning</a></div>
+            <div><a href="/pages/kontakt.html">Kontakt</a></div>
+        </div>
+        <div class="kontakt-content">
+            <h1>KONTAKT</h1>
+            <div class="container">
+                <h2>Kontakta oss</h2>
+                <form action="#">
+                    <label for="first-name">Förnamn</label>
+                    <input type="text" id="first-name" name="firstName" placeholder="Ditt förnamn.." required>
+            
+                    <label for="last-name">Efternamn</label>
+                    <input type="text" id="last-name" name="lastName" placeholder="Ditt efternamn..">
+                    
+                    <select id="personal" name="personal">
+                        <option value="Reception">Reception</option>
+                        <option value="Ägaren">Ordföranden</option>
+                        <option value="Ridlärare">Ridlärare 1</option>
+                        <option value="Ridlärare">Ridlärare 2</option>
+                        <option value="Ridlärare">Ridlärare 3</option>
+                    </select>
+                    
+                    <textarea id="message" name="message" placeholder="Skriv ditt meddelande här.." style="height:200px"></textarea>
+            
+                    <input id="kontaktBtn" type="button" onclick="saveText()" value="Skicka">
+                </form>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div>
+            <h3>POSTADRESS</h3>
+            <p>Stad: Stadnamn</p>
+            <p>Gatuaddress: Gatunamn</p>
+            <p>Postnummer: 12345</p>
+        </div>
+        <div>
+            <h3>KONTAKT</h3>
+            <p>Tel: 000000000</p>
+            <p>E-post: <a href="#">kontakt@fryelestallklubb.se</a></p>
+        </div>
+        <div class="welcome">
+            <h3>Välkommen till oss!</h3>
+        </div>
+    </footer>
+    <script src="/main.js"></script>
+</body>
+
+</html>
